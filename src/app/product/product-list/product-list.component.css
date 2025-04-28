@@ -1,3 +1,11 @@
 .product-card {
     max-width: 150px;
 }
+
+mat-card:hover {
+    transform: scale(1.05);
+}
+
+mat-card {
+    transition: .2s;
+}
