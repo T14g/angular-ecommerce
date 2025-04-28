@@ -7,6 +7,18 @@
                 <span matListItemTitle>{{item.name}}</span>
                 <span matListItemLine>{{item.price | currency:"BRL" }}</span>
             </mat-list-item>
+
+            <mat-list-item>
+                <span class="price" matListItemTitle>Total : {{totalPrice | currency: "BRL"}}</span>
+            </mat-list-item>
+
+            <mat-list-item class="text-right">
+                <button mat-flat-button (click)="clearCart()">Clear</button>
+            </mat-list-item>
+
+            <mat-list-item class="text-right">
+                <button mat-raised-button color="accent" (click)="checkout()">Checkout</button>
+            </mat-list-item>
         </mat-list>
     </mat-card>
 </div>
